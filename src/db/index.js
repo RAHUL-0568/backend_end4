@@ -13,8 +13,8 @@ const connectDB = async()=>{
        
 
     }
-    catch(eroor){
-        console.log("MONOGODB connection fail",eroor);
+    catch(error){
+        console.log("MONOGODB connection fail",error);
         process.exit(1)
     }
 }

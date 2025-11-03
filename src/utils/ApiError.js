@@ -12,7 +12,7 @@ class apiError extends Error{
         this.message=message
         this.errors=errors
 
-        if(statck){
+        if(stack){
             this.stack=statck
         }
         else{
