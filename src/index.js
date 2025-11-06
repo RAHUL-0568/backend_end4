@@ -6,7 +6,8 @@ import mongoose from "mongoose";
 import connectDB from "./db/index.js";
 import userRouter from "./routes/user.routes.js";
 
-dotenv.config({ path: "./env" });
+dotenv.config({ path: "./.env" });
+
 
 const app = express();
 

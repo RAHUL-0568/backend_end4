@@ -38,8 +38,8 @@ const videoSchema = new Schema({
 
     },
     owner:{
-        typeof:Schema.Types.ObjectId,
-        ref:"user"
+        type:Schema.Types.ObjectId,
+        ref:"User"
     }
 
 
@@ -47,3 +47,4 @@ const videoSchema = new Schema({
 ,{timestamps:true})
 videoSchema.plugin(mongooseAggregatePaginate) 
 export const Video = mongoose.model("Video",videoSchema)
+
